@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Expediente del Alumno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/2.0.3/pure-min.css"
+        integrity="sha512-43LpuxTr+ZBEsauGyzEKhuD35fY4zqX9QgjK58rsT0piRceS995Sd6DmGfaJ1nAmvwHxdPPGbPznDDygvxJAg=="
+        crossorigin="anonymous" />
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 1rem;
+        }
+
+        .card img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card li {
+            margin-bottom: 0.5rem;
+        }
+
+        .card ul span {
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        table th,
+        table td {
+            padding: 0.25rem 0.5rem;
+            vertical-align: top;
+            border-bottom: 1px solid #ccc;
+        }
+
+        @media screen and (min-width: 48em) {
+            .pure-u-md-1-2 {
+                float: left;
+                padding-right: 10px;
+                box-sizing: border-box;
+            }
+
+            .pure-u-md-1-2:last-child {
+                padding-right: 0;
+            }
+        }
+
+        .progress-bar {
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #f2f2f2;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: #4CAF50;
+            width: 0%;
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+    <div class="pure-g">
+        <div class="pure-u-1">
+            <h1>Expediente del Alumno</h1>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Foto del alumno" />
+                <h2>Juan Pérez</h2>
+                <ul>
+                    <li><span>Fecha de nacimiento:</span> 15 de enero de 2004</li>
+                    <li><span>Carrera:</span> Ingeniería en Software</li>
+                    <li><span>Semestre:</span> 4</li>
+                    <li><span>Promedio:</span> 9.2</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="card">
+                <h2>Materias</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Calificación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Programación I</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Matemáticas II</td>
+                            <td>8.5</td>
+                        </tr>
+                        <tr>
+                            <td>Inglés II</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>Análisis y Diseño de Sistemas</td>
+                            <td>9.5</td>
+                        </tr>
+                        <tr>
+                            <td>Bases de Datos I</td>
+                            <td>8.8</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
